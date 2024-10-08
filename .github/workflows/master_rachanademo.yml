@@ -51,7 +51,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'RachanaDemo'
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A9DC208256CA404990EAC30D2C16F7D9 }}
-          package: .
+         app-name: 'azapi-HelloWorld-dev-001'
+         slot-name: 'Production'
+         package: .
+         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_931E5DAF0A9A4D87981E97D32C419297 }}
